@@ -14,8 +14,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var heightTextField: UITextField!
     @IBOutlet weak var unitToggle: UISwitch!
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var gaugeViewOutlet: gaugeView!
-    @IBOutlet weak var gaugeBMILabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var unitLabel: UILabel!
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var gaugeView: gaugeView!
+    
+   
 
     
     override func viewDidLoad() {
@@ -38,7 +43,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == weightTextField {
-            //weight?.number(from: textField.text!)
             userData.weight = Double(textField.text!)!
         }
         else {
@@ -52,8 +56,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         userData.doubleHeight()
         userData.setBmiValue()
-        
-        gaugeBMILabel.text = String(userData.bmiValue)
+        gaugeView.base = Int(userData.bmiValue)
+        bmiLabel.text = String(userData.bmiValue)
         resultLabel.text = "\(userData.bmiValue)"
         
         

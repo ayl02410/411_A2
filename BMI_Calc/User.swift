@@ -20,10 +20,11 @@ class User {
     
     static let shared: User = User()
     
+    
+    //MARK: Methods
     func doubleHeight() {
         height /= 100
         height *= height
-        print("In doubleHeight(), height is \(height)\n")
     }
     
     func unitConverter() {

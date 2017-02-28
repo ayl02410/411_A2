@@ -94,17 +94,21 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-D7-yX1" customClass="gaugeView" customModule="BMI_Calc" customModuleProvider="target">
                                                 <rect key="frame" x="21.5" y="60" width="300" height="300"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ3-rS-PXI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ3-rS-PXI">
                                                         <rect key="frame" x="110" y="141" width="80" height="44"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="Ktx-cF-EKj"/>
+                                                    <constraint firstItem="NQ3-rS-PXI" firstAttribute="centerY" secondItem="AJx-D7-yX1" secondAttribute="centerY" id="LKy-79-aNs"/>
+                                                    <constraint firstItem="NQ3-rS-PXI" firstAttribute="centerX" secondItem="AJx-D7-yX1" secondAttribute="centerX" id="PYR-P6-73M"/>
                                                     <constraint firstAttribute="width" constant="300" id="f3O-Kx-X47"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -146,14 +150,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="gaugeBMILabel" destination="NQ3-rS-PXI" id="9ph-tB-sEv"/>
-                        <outlet property="gaugeViewOutlet" destination="AJx-D7-yX1" id="Kz4-xn-d3D"/>
-                        <outlet property="heightLabel" destination="e31-Hf-BfL" id="Tiv-Zl-Zsp"/>
+                        <outlet property="bmiLabel" destination="NQ3-rS-PXI" id="9TV-de-yiw"/>
+                        <outlet property="gaugeView" destination="AJx-D7-yX1" id="5L1-1L-ume"/>
+                        <outlet property="heightLabel" destination="e31-Hf-BfL" id="v7R-ul-K2d"/>
                         <outlet property="heightTextField" destination="W6x-2L-qfB" id="UFL-Ke-jjm"/>
                         <outlet property="resultLabel" destination="oT6-CQ-gRE" id="fk9-8X-ZRd"/>
-                        <outlet property="unitLabel" destination="lHE-3I-VwF" id="d1b-DJ-EtK"/>
+                        <outlet property="unitLabel" destination="lHE-3I-VwF" id="kdr-bK-ciy"/>
                         <outlet property="unitToggle" destination="wuR-CQ-szW" id="MIe-d2-ltf"/>
-                        <outlet property="weightLabel" destination="zr8-2q-QpG" id="ST6-YJ-WeS"/>
+                        <outlet property="weightLabel" destination="zr8-2q-QpG" id="KHR-S2-iEQ"/>
                         <outlet property="weightTextField" destination="ji2-f7-ZrC" id="LOG-kg-tj9"/>
                     </connections>
                 </viewController>
