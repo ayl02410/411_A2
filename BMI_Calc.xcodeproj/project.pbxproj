@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		630ABAD71E65013900D63FA1 /* gaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630ABAD61E65013900D63FA1 /* gaugeView.swift */; };
+		630ABAD71E65013900D63FA1 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630ABAD61E65013900D63FA1 /* GaugeView.swift */; };
 		630ABAD91E652B2400D63FA1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630ABAD81E652B2400D63FA1 /* User.swift */; };
 		631C45AD1E5F8B1000D51F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C45AC1E5F8B1000D51F98 /* AppDelegate.swift */; };
 		631C45AF1E5F8B1000D51F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C45AE1E5F8B1000D51F98 /* ViewController.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		630ABAD61E65013900D63FA1 /* gaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gaugeView.swift; sourceTree = "<group>"; };
+		630ABAD61E65013900D63FA1 /* GaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		630ABAD81E652B2400D63FA1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		631C45A91E5F8B1000D51F98 /* BMI_Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI_Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631C45AC1E5F8B1000D51F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			children = (
 				631C45AC1E5F8B1000D51F98 /* AppDelegate.swift */,
 				631C45AE1E5F8B1000D51F98 /* ViewController.swift */,
-				630ABAD61E65013900D63FA1 /* gaugeView.swift */,
+				630ABAD61E65013900D63FA1 /* GaugeView.swift */,
 				630ABAD81E652B2400D63FA1 /* User.swift */,
 				631C45B01E5F8B1100D51F98 /* Main.storyboard */,
 				631C45B31E5F8B1100D51F98 /* Assets.xcassets */,
@@ -207,7 +207,7 @@
 			files = (
 				630ABAD91E652B2400D63FA1 /* User.swift in Sources */,
 				631C45AF1E5F8B1000D51F98 /* ViewController.swift in Sources */,
-				630ABAD71E65013900D63FA1 /* gaugeView.swift in Sources */,
+				630ABAD71E65013900D63FA1 /* GaugeView.swift in Sources */,
 				631C45AD1E5F8B1000D51F98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
